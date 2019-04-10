@@ -2,31 +2,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
+using UnityEngine.Serialization;
 
 public abstract class CardCollection : MonoBehaviour
 {
 
-	private String _label;
-	private Stack<Card> _cards;
+	public String _label;
+	public Stack<Card> cards;
 
-	public CardCollection(String label)
+	protected CardCollection()
 	{
-		this._cards = new Stack<Card>();
+		begin();
+	}
+
+	public virtual string begin()
+	{
+		_label = "Card collection class";
+		
+		Console.WriteLine(_label);
+		return _label;
+	}
+
+
+	public void SetUp(String label)
+	{
+		this.cards = new Stack<Card>();
 		this._label = label;
 	}
 
-	public void addCard(Card card)
+	public virtual void  addCard(Card card)
 	{
-		_cards.Push(card);
+		cards.Push(card);
 	}
 
 	public void removeCard()
 	{
-		_cards.Pop();
+		cards.Pop();
 	}
 
 	public Card GetCard(int i)
 	{
-		return _cards.Peek();
+		return cards.Peek();
 	}
 }

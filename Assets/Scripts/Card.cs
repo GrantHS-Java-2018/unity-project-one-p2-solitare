@@ -6,60 +6,60 @@ public class Card : MonoBehaviour
 
 	public enum Suit
 	{
-		diamond,
-		club,
-		heart,
-		spade
+		Diamond,
+		Club,
+		Heart,
+		Spade
 	}
 
 	public enum Rank
 	{
-		ace = 1,
-		two = 2,
-		three = 3,
-		four = 4,
-		five = 5,
-		six = 6,
-		seven = 7,
-		eight = 8,
-		nine = 9,
-		ten = 10,
-		jack = 11,
-		queen = 12,
-		king = 13
+		Ace = 1,
+		Two = 2,
+		Three = 3,
+		Four = 4,
+		Five = 5,
+		Six = 6,
+		Seven = 7,
+		Eight = 8,
+		Nine = 9,
+		Ten = 10,
+		Jack = 11,
+		Queen = 12,
+		King = 13
 	}
 
 
 
 
 
-	private Suit cardSuit;
-	private Rank cardRank;
+	private Suit _cardSuit;
+	private Rank _cardRank;
 
 
 	public Card(Suit suit, Rank rank)
 	{
-		cardSuit = suit;
-		cardRank = rank;
+		_cardSuit = suit;
+		_cardRank = rank;
 	}
 
-	public Rank getCardRank()
+	public Rank GetCardRank()
 	{
-		return cardRank;
+		return _cardRank;
 	}
 
-	public Suit getCardSuit()
+	public Suit GetCardSuit()
 	{
-		return cardSuit;
+		return _cardSuit;
 	}
 
-	public void setCardRank(Rank cardRank)
+	public void SetCardRank(Rank cardRank)
 	{
-		this.cardRank = cardRank;
+		this._cardRank = cardRank;
 	}
 
-	public void setCardSuit(Suit cardSuit)
+	public void SetCardSuit(Suit cardSuit)
 	{
-		this.cardSuit = cardSuit;
+		this._cardSuit = cardSuit;
 	}
 }
