@@ -7,7 +7,7 @@ using UnityEngine.Serialization;
 
 public abstract class CardCollection : MonoBehaviour
 {
-
+	//Don't know if any of this works or if we need it, might have extra things
 	public String _label;
 	public Stack<Card> cards;
 

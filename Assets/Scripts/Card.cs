@@ -1,6 +1,6 @@
 ﻿
 using UnityEngine;
-
+//Converted from Java
 public class Card : MonoBehaviour
 {
 
