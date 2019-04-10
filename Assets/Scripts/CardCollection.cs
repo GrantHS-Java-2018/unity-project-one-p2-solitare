@@ -13,15 +13,20 @@ public abstract class CardCollection : MonoBehaviour
 
 	protected CardCollection()
 	{
-		begin();
+	
 	}
 
 	public virtual string begin()
 	{
 		_label = "Card collection class";
-		
 		Console.WriteLine(_label);
 		return _label;
+	}
+
+	public virtual void cardStack()
+	{
+		
+
 	}
 
 

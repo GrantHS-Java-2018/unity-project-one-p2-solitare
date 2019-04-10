@@ -30,9 +30,6 @@ public class Card : MonoBehaviour
 	}
 
 
-
-
-
 	private Suit _cardSuit;
 	private Rank _cardRank;
 
