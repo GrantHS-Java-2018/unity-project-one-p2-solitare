@@ -8,7 +8,7 @@ using UnityEngine.Serialization;
 public abstract class CardCollection : MonoBehaviour
 {
 	//Don't know if any of this works or if we need it, might have extra things
-	public String _label;
+	public String label;
 	public Stack<Card> cards;
 
 	protected CardCollection()
@@ -18,9 +18,9 @@ public abstract class CardCollection : MonoBehaviour
 
 	public virtual string begin()
 	{
-		_label = "Card collection class";
-		Console.WriteLine(_label);
-		return _label;
+		label = "Card collection class";
+		Console.WriteLine(label);
+		return label;
 	}
 
 	public virtual void cardStack()
@@ -33,7 +33,7 @@ public abstract class CardCollection : MonoBehaviour
 	public void SetUp(String label)
 	{
 		this.cards = new Stack<Card>();
-		this._label = label;
+		this.label = label;
 	}
 
 	public virtual void  addCard(Card card)
