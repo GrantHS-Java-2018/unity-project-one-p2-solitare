@@ -1,23 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System;
+using System.Collections;
 
-public enum SuitEnum
+public class CardDeck : CardCollection
 {
-    
-}
-
-public class CardDeck : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
+    public override string begin()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _label = "Card deck";
+        Console.WriteLine(_label);
+        return _label;
     }
 }
