@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
-using UnityEngine.Serialization;
+
 
 public abstract class CardCollection : MonoBehaviour
 {
@@ -51,3 +49,4 @@ public abstract class CardCollection : MonoBehaviour
 		return cards.Peek();
 	}
 }
+
