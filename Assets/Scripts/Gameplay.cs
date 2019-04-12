@@ -10,6 +10,9 @@ public class Rules : MonoBehaviour {
 	  player can quit or win
 	  card will flip
 	 */
+	/*Should have most of the game play functions, like maybe moving the cards when someone
+	 clicks on them and making sure that cards only go to valid positions */ 
+	
 	
 		
 	
