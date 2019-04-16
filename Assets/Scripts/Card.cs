@@ -4,6 +4,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
 
+	public GameObject card;
 	public enum Suit
 	{
 		Diamond,
@@ -30,8 +31,9 @@ public class Card : MonoBehaviour
 	}
 
 
-	private Suit _cardSuit;
-	private Rank _cardRank;
+	public Suit _cardSuit { get; set; }
+
+	public Rank _cardRank { get; set; }
 
 
 	public Card(Suit suit, Rank rank)
@@ -40,23 +42,8 @@ public class Card : MonoBehaviour
 		_cardRank = rank;
 	}
 
-	public Rank GetCardRank()
+	private void Start()
 	{
-		return _cardRank;
-	}
-
-	public Suit GetCardSuit()
-	{
-		return _cardSuit;
-	}
-
-	public void SetCardRank(Rank cardRank)
-	{
-		this._cardRank = cardRank;
-	}
-
-	public void SetCardSuit(Suit cardSuit)
-	{
-		this._cardSuit = cardSuit;
+		Instantiate()
 	}
 }

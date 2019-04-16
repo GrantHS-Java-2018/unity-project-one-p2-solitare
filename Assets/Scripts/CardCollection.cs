@@ -34,7 +34,7 @@ public abstract class CardCollection : MonoBehaviour
 		this.label = label;
 	}
 
-	public virtual void  addCard(Card card)
+	public virtual void addCard(Card card)
 	{
 		cards.Push(card);
 	}
