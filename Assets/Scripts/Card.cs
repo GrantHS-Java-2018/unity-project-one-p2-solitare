@@ -4,7 +4,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
 
-	public GameObject card;
+	public Card myPrefab;
 	public enum Suit
 	{
 		Diamond,
@@ -44,6 +44,6 @@ public class Card : MonoBehaviour
 
 	private void Start()
 	{
-		Instantiate()
+		Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 	}
 }
