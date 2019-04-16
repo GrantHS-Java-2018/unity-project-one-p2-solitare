@@ -4,7 +4,7 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
 
-	public Card myPrefab;
+	public GameObject card;
 	public enum Suit
 	{
 		Diamond,
@@ -31,19 +31,20 @@ public class Card : MonoBehaviour
 	}
 
 
-	public Suit _cardSuit { get; set; }
+	public Suit cardSuit { get; set; }
 
-	public Rank _cardRank { get; set; }
+	public Rank cardRank { get; set; }
 
 
 	public Card(Suit suit, Rank rank)
 	{
-		_cardSuit = suit;
-		_cardRank = rank;
+		cardSuit = suit;
+		cardRank = rank;
 	}
 
-	private void Start()
+	public void Start()
 	{
-		Instantiate(myPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+		Instantiate(card,  , (new Vector2(0, 0)) );
+		
 	}
 }

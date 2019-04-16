@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4951409267665116}
-  - component: {fileID: 114368049221964716}
+  - component: {fileID: 114047769528155588}
   - component: {fileID: 212300425160227842}
   m_Layer: 0
-  m_Name: Card
+  m_Name: card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114368049221964716
+--- !u!114 &114047769528155588
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54821eabe777be9428abf80496ce971e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 0}
+  myPrefab: {fileID: 114047769528155588}
 --- !u!212 &212300425160227842
 SpriteRenderer:
   m_ObjectHideFlags: 1
