@@ -48,5 +48,7 @@ public abstract class CardCollection : MonoBehaviour
 	{
 		return cards.Peek();
 	}
+	
+	
 }
 

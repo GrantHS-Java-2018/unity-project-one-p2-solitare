@@ -1,10 +1,9 @@
 ﻿
 using UnityEngine;
-//Converted from Java, might need changing/not work
+
 public class Card : MonoBehaviour
 {
 
-	public GameObject card;
 	public enum Suit
 	{
 		Diamond,
@@ -42,9 +41,10 @@ public class Card : MonoBehaviour
 		cardRank = rank;
 	}
 
-	public void Start()
+
+	private void Update()
 	{
-		Instantiate(card,  , (new Vector2(0, 0)) );
-		
+
 	}
+
 }
