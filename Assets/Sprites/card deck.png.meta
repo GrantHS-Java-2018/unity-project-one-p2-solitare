@@ -140,9 +140,9 @@ TextureImporter:
       name: club_ace
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 295
-        width: 72
+        width: 71
         height: 97
       alignment: 9
       pivot: {x: 0.50679, y: 0.5050401}
@@ -160,10 +160,10 @@ TextureImporter:
       name: club_two
       rect:
         serializedVersion: 2
-        x: 70
-        y: 301
-        width: 79
-        height: 91
+        x: 73
+        y: 295
+        width: 71
+        height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,26 +337,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: club_jack
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 298
-        width: 77
-        height: 93
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d6d5cd79995335341b77de0ee9caa546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: club_queen
       rect:
         serializedVersion: 2
@@ -366,7 +346,7 @@ TextureImporter:
         height: 95
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -380,8 +360,8 @@ TextureImporter:
       name: club_king
       rect:
         serializedVersion: 2
-        x: 874
-        y: 300
+        x: 878
+        y: 298
         width: 71
         height: 92
       alignment: 0
@@ -423,7 +403,7 @@ TextureImporter:
         x: 74
         y: 196
         width: 71
-        height: 98
+        height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -480,7 +460,7 @@ TextureImporter:
       name: spades_five
       rect:
         serializedVersion: 2
-        x: 294
+        x: 293
         y: 197
         width: 69
         height: 96
@@ -925,7 +905,7 @@ TextureImporter:
         width: 73
         height: 98
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -945,7 +925,7 @@ TextureImporter:
         width: 70
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -965,7 +945,7 @@ TextureImporter:
         width: 70
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -985,7 +965,7 @@ TextureImporter:
         width: 71
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1005,7 +985,7 @@ TextureImporter:
         width: 68
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1025,7 +1005,7 @@ TextureImporter:
         width: 71
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1045,7 +1025,7 @@ TextureImporter:
         width: 72
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1065,7 +1045,7 @@ TextureImporter:
         width: 69
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1085,7 +1065,7 @@ TextureImporter:
         width: 71
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1105,7 +1085,7 @@ TextureImporter:
         width: 72
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1125,7 +1105,7 @@ TextureImporter:
         width: 70
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1145,7 +1125,7 @@ TextureImporter:
         width: 71
         height: 95
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1165,13 +1145,33 @@ TextureImporter:
         width: 72
         height: 97
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 96817287d80a80d4896b8bd3b7ada4cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: club_jack
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 296
+        width: 67
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb565676f0318f44c80754bf395d2d2d
       vertices: []
       indices: 
       edges: []

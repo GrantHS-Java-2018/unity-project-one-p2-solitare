@@ -12,7 +12,7 @@ public class DeckPrefab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 1; i++)
         {         
             GameObject cardInstance = Instantiate(CardPrefab, this.transform);
             //Debug.Log(cardInstance.GetComponent<Card>().suit);
@@ -20,6 +20,7 @@ public class DeckPrefab : MonoBehaviour
             cardInstance.GetComponent<SpriteRenderer>().sprite = kingOfHearts;
             cardInstance.transform.position = new Vector3(2 * i - 8, 0f, 0f);
             Debug.Log("Created Instance " + i);
+            cardInstance.transform.localScale -= new Vector3(.5F, .5F, 0);
         }
     }
 

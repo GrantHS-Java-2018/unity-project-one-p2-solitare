@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameLoop : MonoBehaviour {
 
-	Stack drawPile= new Stack();
+/*	Stack drawPile= new Stack();
 	Stack drawPileClicked = new Stack();
 	Stack rowOne= new Stack();
 	Stack rowTwo= new Stack();
@@ -47,10 +47,10 @@ public class GameLoop : MonoBehaviour {
 		
 	}
 
-	public void Aces()
-	{
+	///public void Aces()
+	//{
 
-		if (Card.value == TopCard.value + 1 && suit == matching)
+		/*if (Card.value == TopCard.value + 1 && suit == matching)
 		{
 			//move to pile
 			//from which and to which?
@@ -140,5 +140,5 @@ public class GameLoop : MonoBehaviour {
 		}
 
 		return win;
-	}
+	}*/
 }

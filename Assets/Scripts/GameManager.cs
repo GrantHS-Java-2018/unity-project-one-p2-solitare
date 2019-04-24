@@ -12,11 +12,8 @@ public class GameManager : MonoBehaviour
 		Instantiate(card);
 	}
 	
-	// Update is called once per frame
-	void Update ()
-	{
-		
-	}
+	
+
 }
 
 //Use Fenger's code example for reference on making the card decks
