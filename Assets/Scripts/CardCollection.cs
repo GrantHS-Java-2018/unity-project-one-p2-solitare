@@ -14,14 +14,14 @@ public abstract class CardCollection : MonoBehaviour
 	
 	}
 
-	public virtual string begin()
+	public virtual string Begin()
 	{
 		label = "Card collection class";
 		Console.WriteLine(label);
 		return label;
 	}
 
-	public virtual void cardStack()
+	public virtual void CardStack()
 	{
 		
 
@@ -34,12 +34,12 @@ public abstract class CardCollection : MonoBehaviour
 		this.label = label;
 	}
 
-	public virtual void addCard(Card card)
+	public virtual void  AddCard(Card card)
 	{
 		cards.Push(card);
 	}
 
-	public void removeCard()
+	public void RemoveCard()
 	{
 		cards.Pop();
 	}
