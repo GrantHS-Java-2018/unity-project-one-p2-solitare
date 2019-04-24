@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 
 public class GameLoop : MonoBehaviour {
 
-/*	Stack drawPile= new Stack();
+	
+	Stack drawPile= new Stack();
 	Stack drawPileClicked = new Stack();
 	Stack rowOne= new Stack();
 	Stack rowTwo= new Stack();
@@ -47,67 +49,101 @@ public class GameLoop : MonoBehaviour {
 		
 	}
 
-	///public void Aces()
+	//public void Aces()
 	//{
 
-		/*if (Card.value == TopCard.value + 1 && suit == matching)
-		{
-			//move to pile
-			//from which and to which?
-		}
-		//Else{
-		//do nothing
+	//	if (Card.value == TopCard.value + 1 && suit == matching)
+	///	{
+	//move to pile
+	//from which and to which?
+	//}
+	//Else{
+	//do nothing }
 //}
 
 //only interact with face up cards
 
-	}
+
+	
+	
 
 	public void Shuffle()
 	{
-		drawPile.Pop();
-		rowOne.Push();
-		drawPile.Pop();
-		rowTwoFacedown.Push();
-		drawPile.Pop();
-		rowTwo.Push();
+		object card;
+		card = drawPile.Pop();
+		rowOne.Push(card);
+		card = drawPile.Pop();
+		rowTwoFacedown.Push(card);
+		card = drawPile.Pop();
+		rowTwo.Push(card);
 		
 		for(int q = 0; q < 2; q++){
-			drawPile.Pop();
-			rowThreeFacedown.Push();}
+			card = drawPile.Pop();
+			rowThreeFacedown.Push(card);}
 		
-		drawPile.Pop();
-		rowThree.Push();
+		card = drawPile.Pop();
+		rowThree.Push(card);
 		
 		for (int w = 0; w < 3; w++)
 		{
-			drawPile.Pop();
-			rowFourFacedown.Push();
+			card = drawPile.Pop();
+			rowFourFacedown.Push(card);
 		}
 
-		drawPile.Pop();
-		rowFour.Push();
+		card = drawPile.Pop();
+		rowFour.Push(card);
 		
 		for(int e = 0; e < 4; e++){
-			drawPile.Pop();
-			rowFiveFacedown.Push();}
+			card = drawPile.Pop();
+			rowFiveFacedown.Push(card);}
 		
-		drawPile.Pop();
-		rowFive.Push();
+		card = drawPile.Pop();
+		rowFive.Push(card);
 		
 		for(int r = 0; r < 5; r++){
-			drawPile.Pop();
-			rowSixFacedown.Push();}
+			card = drawPile.Pop();
+			rowSixFacedown.Push(card);}
 		
-		drawPile.Pop();
-		rowSix.Push();
+		card = drawPile.Pop();
+		rowSix.Push(card);
 		
 		for(int t = 0; t < 6; t++){
-			drawPile.Pop();
-			rowSevenFacedown.Push();}
+			card = drawPile.Pop();
+			rowSevenFacedown.Push(card);}
 		
-		drawPile.Pop();
-		rowSeven.Push();
+		card = drawPile.Pop();
+		rowSeven.Push(card);
+
+	}
+
+	private void CheckLength()
+	{
+		object current;
+		//Sense when stack for flipped cards is empty and shift stacks
+		if(rowTwo.Count==0){
+			current = rowTwoFacedown.Pop();
+			rowTwo.Push(current);
+		}
+		if(rowThree.Count==0){
+			current = rowThreeFacedown.Pop();
+			rowThree.Push(current);
+		}
+		if(rowFour.Count==0){
+			current= rowFourFacedown.Pop();
+			rowFour.Push(current);
+		}
+		if(rowFive.Count==0){
+			current = rowFiveFacedown.Pop();
+			rowFive.Push(current);
+		}
+		if(rowSix.Count==0){
+			current = rowSixFacedown.Pop();
+			rowSix.Push(current);
+		}
+		if(rowSeven.Count==0){
+			current = rowSevenFacedown.Pop();
+			rowSeven.Push(current);
+		}
 
 	}
 
@@ -130,7 +166,7 @@ public class GameLoop : MonoBehaviour {
 	public bool Win()
 	{
 		bool win; 
-		if(acesDiamond.count==13 && acesHearts.count==13  && acesClubs.count==13  && acesSpades.count==13)
+		if(acesDiamond.Count==13 && acesHearts.Count==13  && acesClubs.Count==13  && acesSpades.Count==13)
 		{
 			win = true;
 		}
@@ -140,5 +176,5 @@ public class GameLoop : MonoBehaviour {
 		}
 
 		return win;
-	}*/
+	}
 }
