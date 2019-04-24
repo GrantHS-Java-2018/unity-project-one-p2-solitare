@@ -18,3 +18,5 @@ public class GameManager : MonoBehaviour
 		
 	}
 }
+
+//Use Fenger's code example for reference on making the card decks
