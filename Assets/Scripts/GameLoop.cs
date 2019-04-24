@@ -69,22 +69,21 @@ public class GameLoop : MonoBehaviour {
 
 	public void Shuffle()
 	{
-		object card;
-		card = drawPile.Pop();
+		var card = drawPile.Pop();
 		rowOne.Push(card);
 		card = drawPile.Pop();
 		rowTwoFacedown.Push(card);
 		card = drawPile.Pop();
 		rowTwo.Push(card);
 		
-		for(int q = 0; q < 2; q++){
+		for(var q = 0; q < 2; q++){
 			card = drawPile.Pop();
 			rowThreeFacedown.Push(card);}
 		
 		card = drawPile.Pop();
 		rowThree.Push(card);
 		
-		for (int w = 0; w < 3; w++)
+		for (var w = 0; w < 3; w++)
 		{
 			card = drawPile.Pop();
 			rowFourFacedown.Push(card);
@@ -93,21 +92,21 @@ public class GameLoop : MonoBehaviour {
 		card = drawPile.Pop();
 		rowFour.Push(card);
 		
-		for(int e = 0; e < 4; e++){
+		for(var e = 0; e < 4; e++){
 			card = drawPile.Pop();
 			rowFiveFacedown.Push(card);}
 		
 		card = drawPile.Pop();
 		rowFive.Push(card);
 		
-		for(int r = 0; r < 5; r++){
+		for(var r = 0; r < 5; r++){
 			card = drawPile.Pop();
 			rowSixFacedown.Push(card);}
 		
 		card = drawPile.Pop();
 		rowSix.Push(card);
 		
-		for(int t = 0; t < 6; t++){
+		for(var t = 0; t < 6; t++){
 			card = drawPile.Pop();
 			rowSevenFacedown.Push(card);}
 		
@@ -156,17 +155,11 @@ public class GameLoop : MonoBehaviour {
 
 	
 
-	
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	public bool Win()
 	{
 		bool win; 
-		if(acesDiamond.Count==13 && acesHearts.Count==13  && acesClubs.Count==13  && acesSpades.Count==13)
+		if(acesDiamond.Count==13 && acesHearts.Count==13  && acesClubs.Count==13 
+		   && acesSpades.Count==13)
 		{
 			win = true;
 		}
