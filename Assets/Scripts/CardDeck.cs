@@ -30,10 +30,12 @@ public class CardDeck : CardCollection{
      };
 
 
-    public Card.Rank[] IntToRank
+
+
+    public Card.Suit[] IntToSuit
     {
-        get { return intToRank; }
-        set { intToRank = value; }
+        get { return intToSuit; }
+        set { intToSuit = value;  }
     }
 
     private Stack<Card> deckOfCards = new Stack<Card>();// Contains all 52 cards
@@ -47,10 +49,7 @@ public class CardDeck : CardCollection{
 
         }
 
-       /* public void shuffleDeck()
-        {
-            Stack<>.shuffle(deckOfCards);
-        }*/
+      
 
         public Card dealCard()
         {
