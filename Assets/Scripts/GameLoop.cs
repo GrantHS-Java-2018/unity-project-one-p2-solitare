@@ -5,27 +5,28 @@ using UnityEngine.Experimental.UIElements;
 
 public class GameLoop : MonoBehaviour {
 
+	CardDeck deck = new CardDeck();
 	
-	Stack drawPile= new Stack();
-	Stack drawPileClicked = new Stack();
-	Stack rowOne= new Stack();
-	Stack rowTwo= new Stack();
-	Stack rowThree= new Stack();
-	Stack rowFour= new Stack();
-	Stack rowFive= new Stack();
-	Stack rowSix= new Stack();
-	Stack rowSeven= new Stack();
-	Stack acesDiamond= new Stack();
-	Stack acesHearts= new Stack();
-	Stack acesClubs= new Stack();
-	Stack acesSpades= new Stack();
-	Stack movementSpace= new Stack();
-	Stack rowTwoFacedown= new Stack();
-	Stack rowThreeFacedown= new Stack();
-	Stack rowFourFacedown= new Stack();
-	Stack rowFiveFacedown= new Stack();
-	Stack rowSixFacedown= new Stack();
-	Stack rowSevenFacedown= new Stack();
+	Stack _drawPile= new Stack();
+	Stack _drawPileClicked = new Stack();
+	Stack _rowOne= new Stack();
+	Stack _rowTwo= new Stack();
+	Stack _rowThree= new Stack();
+	Stack _rowFour= new Stack();
+	Stack _rowFive= new Stack();
+	Stack _rowSix= new Stack();
+	Stack _rowSeven= new Stack();
+	Stack _acesDiamond= new Stack();
+	Stack _acesHearts= new Stack();
+	Stack _acesClubs= new Stack();
+	Stack _acesSpades= new Stack();
+	Stack _movementSpace= new Stack();
+	Stack _rowTwoFacedown= new Stack();
+	Stack _rowThreeFacedown= new Stack();
+	Stack _rowFourFacedown= new Stack();
+	Stack _rowFiveFacedown= new Stack();
+	Stack _rowSixFacedown= new Stack();
+	Stack _rowSevenFacedown= new Stack();
 	void Start ()
 	{
 		CardDeck deck = new CardDeck();
@@ -49,17 +50,18 @@ public class GameLoop : MonoBehaviour {
 		
 	}
 
-	//public void Aces()
-	//{
+	public void Aces()
+	{
 
-	//	if (Card.value == TopCard.value + 1 && suit == matching)
-	///	{
-	//move to pile
-	//from which and to which?
-	//}
-	//Else{
-	//do nothing }
-//}
+		if (deck.IntToSuit == deck.IntToSuit && deck.IntToRank[0] == deck.IntToRank[1] + 1)
+		{
+			
+		}
+		
+		else {
+			
+		}
+	}
 
 //only interact with face up cards
 
@@ -69,49 +71,49 @@ public class GameLoop : MonoBehaviour {
 
 	public void Shuffle()
 	{
-		var card = drawPile.Pop();
-		rowOne.Push(card);
-		card = drawPile.Pop();
-		rowTwoFacedown.Push(card);
-		card = drawPile.Pop();
-		rowTwo.Push(card);
+		var card = _drawPile.Pop();
+		_rowOne.Push(card);
+		card = _drawPile.Pop();
+		_rowTwoFacedown.Push(card);
+		card = _drawPile.Pop();
+		_rowTwo.Push(card);
 		
 		for(var q = 0; q < 2; q++){
-			card = drawPile.Pop();
-			rowThreeFacedown.Push(card);}
+			card = _drawPile.Pop();
+			_rowThreeFacedown.Push(card);}
 		
-		card = drawPile.Pop();
-		rowThree.Push(card);
+		card = _drawPile.Pop();
+		_rowThree.Push(card);
 		
 		for (var w = 0; w < 3; w++)
 		{
-			card = drawPile.Pop();
-			rowFourFacedown.Push(card);
+			card = _drawPile.Pop();
+			_rowFourFacedown.Push(card);
 		}
 
-		card = drawPile.Pop();
-		rowFour.Push(card);
+		card = _drawPile.Pop();
+		_rowFour.Push(card);
 		
 		for(var e = 0; e < 4; e++){
-			card = drawPile.Pop();
-			rowFiveFacedown.Push(card);}
+			card = _drawPile.Pop();
+			_rowFiveFacedown.Push(card);}
 		
-		card = drawPile.Pop();
-		rowFive.Push(card);
+		card = _drawPile.Pop();
+		_rowFive.Push(card);
 		
 		for(var r = 0; r < 5; r++){
-			card = drawPile.Pop();
-			rowSixFacedown.Push(card);}
+			card = _drawPile.Pop();
+			_rowSixFacedown.Push(card);}
 		
-		card = drawPile.Pop();
-		rowSix.Push(card);
+		card = _drawPile.Pop();
+		_rowSix.Push(card);
 		
 		for(var t = 0; t < 6; t++){
-			card = drawPile.Pop();
-			rowSevenFacedown.Push(card);}
+			card = _drawPile.Pop();
+			_rowSevenFacedown.Push(card);}
 		
-		card = drawPile.Pop();
-		rowSeven.Push(card);
+		card = _drawPile.Pop();
+		_rowSeven.Push(card);
 
 	}
 
@@ -119,29 +121,29 @@ public class GameLoop : MonoBehaviour {
 	{
 		object current;
 		//Sense when stack for flipped cards is empty and shift stacks
-		if(rowTwo.Count==0){
-			current = rowTwoFacedown.Pop();
-			rowTwo.Push(current);
+		if(_rowTwo.Count==0){
+			current = _rowTwoFacedown.Pop();
+			_rowTwo.Push(current);
 		}
-		if(rowThree.Count==0){
-			current = rowThreeFacedown.Pop();
-			rowThree.Push(current);
+		if(_rowThree.Count==0){
+			current = _rowThreeFacedown.Pop();
+			_rowThree.Push(current);
 		}
-		if(rowFour.Count==0){
-			current= rowFourFacedown.Pop();
-			rowFour.Push(current);
+		if(_rowFour.Count==0){
+			current= _rowFourFacedown.Pop();
+			_rowFour.Push(current);
 		}
-		if(rowFive.Count==0){
-			current = rowFiveFacedown.Pop();
-			rowFive.Push(current);
+		if(_rowFive.Count==0){
+			current = _rowFiveFacedown.Pop();
+			_rowFive.Push(current);
 		}
-		if(rowSix.Count==0){
-			current = rowSixFacedown.Pop();
-			rowSix.Push(current);
+		if(_rowSix.Count==0){
+			current = _rowSixFacedown.Pop();
+			_rowSix.Push(current);
 		}
-		if(rowSeven.Count==0){
-			current = rowSevenFacedown.Pop();
-			rowSeven.Push(current);
+		if(_rowSeven.Count==0){
+			current = _rowSevenFacedown.Pop();
+			_rowSeven.Push(current);
 		}
 
 	}
@@ -158,8 +160,8 @@ public class GameLoop : MonoBehaviour {
 	public bool Win()
 	{
 		bool win; 
-		if(acesDiamond.Count==13 && acesHearts.Count==13  && acesClubs.Count==13 
-		   && acesSpades.Count==13)
+		if(_acesDiamond.Count==13 && _acesHearts.Count==13  && _acesClubs.Count==13 
+		   && _acesSpades.Count==13)
 		{
 			win = true;
 		}

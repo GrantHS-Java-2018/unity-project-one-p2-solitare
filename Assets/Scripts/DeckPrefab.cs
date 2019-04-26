@@ -2,11 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class DeckPrefab : MonoBehaviour
 {
 
-    public GameObject CardPrefab;
+    [FormerlySerializedAs("CardPrefab")] public GameObject cardPrefab;
     public Sprite kingOfHearts;
     //download it here https://opengameart.org/sites/default/files/styles/medium/public/king_of_hearts2.png
     // Start is called before the first frame update
@@ -14,7 +15,7 @@ public class DeckPrefab : MonoBehaviour
     {
         for (int i = 0; i < 1; i++)
         {         
-            GameObject cardInstance = Instantiate(CardPrefab, this.transform);
+            GameObject cardInstance = Instantiate(cardPrefab, this.transform);
             //Debug.Log(cardInstance.GetComponent<Card>().suit);
             
             cardInstance.GetComponent<SpriteRenderer>().sprite = kingOfHearts;

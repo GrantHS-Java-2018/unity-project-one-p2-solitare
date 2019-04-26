@@ -4,7 +4,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - CardPrefab: {fileID: 1435680447143908, guid: 589aabc62d0d80b47bb57f792fcb585a,
+  - cardPrefab: {fileID: 1435680447143908, guid: 589aabc62d0d80b47bb57f792fcb585a,
       type: 2}
   - kingOfHearts: {fileID: 21300076, guid: 4fb18c4f3dcd24240b56078c8818eade, type: 3}
   executionOrder: 0

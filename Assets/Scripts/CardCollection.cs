@@ -13,6 +13,45 @@ public abstract class CardCollection : MonoBehaviour
 	{
 	
 	}
+	
+	private Card.Suit[] _intToSuit = {
+		Card.Suit.Diamond,
+		Card.Suit.Club,
+		Card.Suit.Heart,
+		Card.Suit.Spade
+	};
+    
+	private Card.Rank[] _intToRank = {
+		Card.Rank.Two,
+		Card.Rank.Three,
+		Card.Rank.Four,
+		Card.Rank.Five,
+		Card.Rank.Six,
+		Card.Rank.Seven,
+		Card.Rank.Eight,
+		Card.Rank.Nine,
+		Card.Rank.Ten,
+		Card.Rank.Jack,
+		Card.Rank.Queen,
+		Card.Rank.King,
+		Card.Rank.Ace
+	};
+
+
+
+
+	public Card.Suit[] IntToSuit
+	{
+		get { return _intToSuit; }
+		set { _intToSuit = value;  }
+	}
+    
+	public Card.Rank[] IntToRank
+	{
+		get { return _intToRank; }
+		set { _intToRank = value;  }
+	}
+
 
 	public virtual string Begin()
 	{

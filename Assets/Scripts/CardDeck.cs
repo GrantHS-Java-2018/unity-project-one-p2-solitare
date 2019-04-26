@@ -6,54 +6,23 @@ using UnityEngine;
 public class CardDeck : CardCollection{
  
     
-    private Card.Suit[] intToSuit = {
-            Card.Suit.Diamond,
-            Card.Suit.Club,
-            Card.Suit.Heart,
-            Card.Suit.Spade
-    };
-    
-    private Card.Rank[] intToRank = {
-            Card.Rank.Two,
-            Card.Rank.Three,
-            Card.Rank.Four,
-            Card.Rank.Five,
-            Card.Rank.Six,
-            Card.Rank.Seven,
-            Card.Rank.Eight,
-            Card.Rank.Nine,
-            Card.Rank.Ten,
-            Card.Rank.Jack,
-            Card.Rank.Queen,
-            Card.Rank.King,
-            Card.Rank.Ace
-     };
 
-
-
-
-    public Card.Suit[] IntToSuit
-    {
-        get { return intToSuit; }
-        set { intToSuit = value;  }
-    }
-
-    private Stack<Card> deckOfCards = new Stack<Card>();// Contains all 52 cards
+    private Stack<Card> _deckOfCards = new Stack<Card>();// Contains all 52 cards
 
       
     public CardDeck()    // Constructor
         {
             
             //shuffleDeck();
-     
+            Debug.Log("Called");
 
         }
 
       
 
-        public Card dealCard()
+        public Card DealCard()
         {
-            Card topCard = deckOfCards.Pop();
+            Card topCard = _deckOfCards.Pop();
             return topCard;
         }
         

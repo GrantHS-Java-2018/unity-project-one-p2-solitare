@@ -30,15 +30,22 @@ public class Card : MonoBehaviour
 	}
 
 
-	public Suit cardSuit { get; set; }
+	private Suit CardSuit { get; set; }
 
-	public Rank cardRank { get; set; }
+	private Rank CardRank { get; set; }
 
 
-	public Card(Suit suit, Rank rank)
+	public Card.Suit CardSuitMethod (Suit suit)
 	{
-		cardSuit = suit;
-		cardRank = rank;
+		CardSuit = suit;
+		return suit;
+		Debug.Log("worked");
+	}
+	
+	public Card.Rank CardRankMethod (Rank rank)
+	{
+		CardRank = rank;
+		return rank;
 	}
 
 
