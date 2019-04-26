@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.Experimental.UIElements;
 
 public class GameLoop : MonoBehaviour {
+	
+	//not sure if any of this code works
 
-	CardDeck deck = new CardDeck();
+	
 	
 	Stack _drawPile= new Stack();
 	Stack _drawPileClicked = new Stack();
@@ -45,7 +47,7 @@ public class GameLoop : MonoBehaviour {
 		//+ suit for the ace piles
 		
 
-
+		Shuffle();
 
 		
 	}
@@ -53,21 +55,13 @@ public class GameLoop : MonoBehaviour {
 	public void Aces()
 	{
 
-		if (deck.IntToSuit == deck.IntToSuit && deck.IntToRank[0] == deck.IntToRank[1] + 1)
-		{
-			
-		}
 		
-		else {
-			
-		}
 	}
 
-//only interact with face up cards
+	//only interact with face up cards
 
 
-	
-	
+
 
 	public void Shuffle()
 	{
@@ -150,10 +144,10 @@ public class GameLoop : MonoBehaviour {
 
 
 
-//Deal in 7 rows, 1,2,3,4,5,6,7 cards each, only top card visible
+	//Deal in 7 rows, 1,2,3,4,5,6,7 cards each, only top card visible
 
-//only check if player moves card to the pile
-//does not apply to movement stack
+	//only check if player moves card to the pile
+	//does not apply to movement stack
 
 	
 

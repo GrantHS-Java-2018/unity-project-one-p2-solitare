@@ -13,15 +13,18 @@ public abstract class CardCollection : MonoBehaviour
 	{
 	
 	}
-	
-	private Card.Suit[] _intToSuit = {
+
+
+	public Card.Suit[] IntToSuit { get; set; } =
+	{
 		Card.Suit.Diamond,
 		Card.Suit.Club,
 		Card.Suit.Heart,
 		Card.Suit.Spade
 	};
-    
-	private Card.Rank[] _intToRank = {
+
+	public Card.Rank[] IntToRank { get; set; } =
+	{
 		Card.Rank.Two,
 		Card.Rank.Three,
 		Card.Rank.Four,
@@ -38,21 +41,6 @@ public abstract class CardCollection : MonoBehaviour
 	};
 
 
-
-
-	public Card.Suit[] IntToSuit
-	{
-		get { return _intToSuit; }
-		set { _intToSuit = value;  }
-	}
-    
-	public Card.Rank[] IntToRank
-	{
-		get { return _intToRank; }
-		set { _intToRank = value;  }
-	}
-
-
 	public virtual string Begin()
 	{
 		label = "Card collection class";
@@ -60,11 +48,6 @@ public abstract class CardCollection : MonoBehaviour
 		return label;
 	}
 
-	public virtual void CardStack()
-	{
-		
-
-	}
 
 
 	public void SetUp(String label)
