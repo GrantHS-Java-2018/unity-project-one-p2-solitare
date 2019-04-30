@@ -206,7 +206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1411691691002278, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
       propertyPath: m_Name
-      value: CardShape (3)
+      value: Pile 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
@@ -429,7 +429,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1411691691002278, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
       propertyPath: m_Name
-      value: CardShape (6)
+      value: Ple 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
@@ -527,7 +527,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1411691691002278, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
       propertyPath: m_Name
-      value: CardShape (2)
+      value: Pile 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
@@ -573,7 +573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1411691691002278, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
       propertyPath: m_Name
-      value: CardShape (4)
+      value: Pile 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
@@ -748,7 +748,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1411691691002278, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
       propertyPath: m_Name
-      value: CardShape (1)
+      value: Pile 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
@@ -794,7 +794,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1411691691002278, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
       propertyPath: m_Name
-      value: CardShape (5)
+      value: Pile 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
@@ -837,6 +837,10 @@ Prefab:
     - target: {fileID: 4008445255384086, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411691691002278, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
+      propertyPath: m_Name
+      value: Pile 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81d4b0968f0171d4fb4b873ff00fcdf4, type: 2}
