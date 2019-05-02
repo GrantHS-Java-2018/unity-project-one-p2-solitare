@@ -11,7 +11,8 @@ public abstract class CardCollection : MonoBehaviour
 
 	protected CardCollection()
 	{
-	
+
+
 	}
 
 
@@ -39,6 +40,8 @@ public abstract class CardCollection : MonoBehaviour
 		Card.Rank.King,
 		Card.Rank.Ace
 	};
+
+	
 
 
 	public virtual string Begin()
