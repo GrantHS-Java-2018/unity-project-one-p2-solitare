@@ -8,7 +8,6 @@ public class CardDeck : CardCollection{
     
 
     private Stack<Card> _deckOfCards = new Stack<Card>();// Contains all 52 cards
-    
 
       
     public CardDeck()    // Constructor
@@ -16,19 +15,8 @@ public class CardDeck : CardCollection{
             
             //shuffleDeck();
             Debug.Log("Called");
-            
 
         }
-    
-    public void CardAdd()
-    {
-        for ( int suit = 0; suit < 4; suit++ ) {
-            for ( int rank = 0; rank < 13; rank++ ) {
-                cards.Push(new CardD(IntToSuit[suit], IntToRank[rank]));
-            }
-        }
-
-    }
 
       
 
