@@ -342,7 +342,6 @@ GameObject:
   - component: {fileID: 673228953}
   - component: {fileID: 673228957}
   - component: {fileID: 673228955}
-  - component: {fileID: 673228958}
   m_Layer: 0
   m_Name: Board
   m_TagString: Untagged
@@ -362,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0172e9a804b02d4b8c6745ab98c7aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 0}
+  card: {fileID: 1435680447143908, guid: 589aabc62d0d80b47bb57f792fcb585a, type: 3}
 --- !u!4 &673228954
 Transform:
   m_ObjectHideFlags: 0
@@ -437,20 +436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f30e7994181004fad9fbf169d443db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardPrefab: {fileID: 0}
-  kingOfHearts: {fileID: 0}
---- !u!114 &673228958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673228952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 247442469, guid: f7b54ff4a43d4fcf81b4538b678e0bcc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 1435680447143908, guid: 589aabc62d0d80b47bb57f792fcb585a, type: 3}
+  kingOfHearts: {fileID: 21300076, guid: 4fb18c4f3dcd24240b56078c8818eade, type: 3}
 --- !u!1001 &956657772
 PrefabInstance:
   m_ObjectHideFlags: 0
