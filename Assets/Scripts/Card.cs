@@ -1,5 +1,7 @@
 ﻿
+using System.Xml.Linq;
 using UnityEngine;
+using UnityEngine.Experimental.PlayerLoop;
 
 public class Card : MonoBehaviour
 {
@@ -29,6 +31,11 @@ public class Card : MonoBehaviour
 		King = 13
 	}
 
+	public Card()
+	{
+		CardSuitMethod(Suit.Club);
+		CardRankMethod(Rank.Ace);
+	}
 
 	private Suit CardSuit { get; set; }
 
@@ -38,13 +45,17 @@ public class Card : MonoBehaviour
 	public Card.Suit CardSuitMethod (Suit suit)
 	{
 		CardSuit = suit;
-		return suit;
 		Debug.Log("worked");
+		Debug.Log(suit);
+		return suit;
+		
 	}
 	
 	public Card.Rank CardRankMethod (Rank rank)
 	{
 		CardRank = rank;
+		Debug.Log("worked");
+		Debug.Log(rank);
 		return rank;
 	}
 

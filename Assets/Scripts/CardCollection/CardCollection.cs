@@ -8,6 +8,7 @@ public abstract class CardCollection : MonoBehaviour
 	//Don't know if any of this works or if we need it, might have extra things
 	public String label;
 	public Stack<Card> cards;
+	
 
 	protected CardCollection()
 	{
@@ -41,7 +42,11 @@ public abstract class CardCollection : MonoBehaviour
 		Card.Rank.Ace
 	};
 
-	
+	public void CardAdd()
+	{
+		
+
+	}
 
 
 	public virtual string Begin()
@@ -61,6 +66,17 @@ public abstract class CardCollection : MonoBehaviour
 
 	public virtual void  AddCard(Card card)
 	{
+		for ( int suit = 0; suit < 4; suit++ ) {
+			for ( int rank = 0; rank < 13; rank++ )
+			{
+				var cardSuit = GetCard(suit);
+				Debug.Log(GetCard(suit) + "Get Card");
+				var cardRank = IntToRank[rank];
+				//cards.Push(cardRank, cardSuit);
+
+
+			}
+		}
 		cards.Push(card);
 	}
 
