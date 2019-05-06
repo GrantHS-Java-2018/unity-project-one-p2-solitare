@@ -1,4 +1,6 @@
 ﻿
+using System;
+using System.Runtime.InteropServices.ComTypes;
 using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.Experimental.PlayerLoop;
@@ -33,8 +35,10 @@ public class Card : MonoBehaviour
 
 	public Card()
 	{
-		CardSuitMethod(Suit.Club);
-		CardRankMethod(Rank.Ace);
+		CardSuit = CardSuitMethod(Suit.Club);
+		CardRank = CardRankMethod(Rank.Ace);
+		
+		
 	}
 
 	private Suit CardSuit { get; set; }

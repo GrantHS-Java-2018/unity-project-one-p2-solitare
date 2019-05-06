@@ -17,7 +17,6 @@ public class CardDeck : CardCollection{
             //shuffleDeck();
 
             Debug.Log("Called");
-            AddCard(card);
 
         }
     
