@@ -1,9 +1,4 @@
-﻿
-using System;
-using System.Runtime.InteropServices.ComTypes;
-using System.Xml.Linq;
-using UnityEngine;
-using UnityEngine.Experimental.PlayerLoop;
+﻿using UnityEngine;
 
 public class Card : MonoBehaviour
 {
