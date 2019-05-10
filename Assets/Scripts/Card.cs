@@ -60,12 +60,11 @@ public class Card : MonoBehaviour
 				CardSuit = Suit.Spade;
 				break;
 			default:
-				Debug.Log("Invalid");
+				Debug.Log("Invalid suit");
 				break;	
 		}
 		
 
-		Debug.Log("worked");
 		Debug.Log(CardSuit);
 		return CardSuit;
 		
@@ -115,12 +114,10 @@ public class Card : MonoBehaviour
 				CardRank = Rank.King;
 				break;
 			default:
-				Debug.Log("Invalid");
+				Debug.Log("Invalid rank");
 				break;	
 		}
 
-
-		Debug.Log("worked");
 		Debug.Log(rank);
 		return CardRank;
 	}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 public abstract class PileScript : CardCollection {
-	CardDeck deck = new CardDeck();
+	private CardDeck deck = new CardDeck();
 
 	// Use this for initialization
 	void Start () {

@@ -46,7 +46,7 @@ public abstract class CardCollection : MonoBehaviour
 
 	public void CardAdd()
 	{
-		Card card = new Card();
+		var card = new Card();
 	
 		for ( int suit = 0; suit < 4; suit++ ) {
 			for ( int rank = 0; rank < 13; rank++ )
