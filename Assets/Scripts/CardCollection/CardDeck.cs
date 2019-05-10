@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -10,18 +11,12 @@ public class CardDeck : CardCollection{
 
       
     public CardDeck()    // Constructor
-    {
-        Card card = GetCard(1);
+        {
+            
             //shuffleDeck();
-
             Debug.Log("Called");
 
         }
-<<<<<<< HEAD
-=======
-    
-    
->>>>>>> master
 
       
 
@@ -31,5 +26,13 @@ public class CardDeck : CardCollection{
             return topCard;
         }
         
-      
    }
+
+
+
+   
+
+
+
+
+

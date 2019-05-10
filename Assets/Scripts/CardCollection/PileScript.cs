@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AcePiles : CardCollection {
+public class PileScript : CardCollection {
 
 	// Use this for initialization
 	void Start () {
